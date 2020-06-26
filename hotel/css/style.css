@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKof4Mg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKkZg.ttf) format('truetype');
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
 /* Colors */
 /* Basic setting */
 html {
@@ -21,10 +39,15 @@ img {
   max-height: 100%;
 }
 /* Навигационная панель */
-/* .header {
-	background-color: #2c241b;
+.header {
+  background-color: #2c241b;
 }
- */
+a,
+:before,
+:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .nav-item a {
   position: relative;
   color: #ffffff;
@@ -32,9 +55,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 0 15px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  padding: 5px 15px;
 }
 .nav-item a:hover {
   opacity: .7;
@@ -43,15 +64,13 @@ img {
   content: '';
   position: absolute;
   left: 5px;
-  bottom: -5px;
+  bottom: -0.5px;
   width: 0%;
   height: 1px;
   background-color: #e7e7e7;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .nav-item a:hover:before {
-  width: 30%;
+  width: 35%;
 }
 .header-phone {
   text-align: center;
@@ -72,12 +91,16 @@ img {
 .call-back {
   color: #e7e7e7 !important;
   font-family: Nunito;
-  font-size: 13px;
+  line-height: 1.5px;
+  font-size: 12px;
   font-weight: 400;
-  letter-spacing: 1.95px;
+  letter-spacing: 1.5px;
   text-decoration: underline;
   text-transform: uppercase;
 }
 .navbar-nav li {
   padding-right: 15px;
+}
+.navbar-brand:hover {
+  opacity: .7;
 }
