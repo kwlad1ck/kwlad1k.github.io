@@ -1,0 +1,84 @@
+/* Colors */
+
+@head-color: #2C241B;
+@orange: #F48F17;
+@dark-orange: #CA7108;
+@title-text-color: #161D23;
+@text-color: #FFFFFF;
+@table-color: #404040;
+
+/* Basic setting */
+html {
+	font-size: 12px;
+}
+
+
+/* Typography */
+section {
+	padding: 10rem 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+/* Навигационная панель */
+.header {
+	background-color: #2c241b;
+}
+
+.nav-item a {
+	position: relative;
+	color: #ffffff;
+	font-family: Nunito;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 15px;
+	transition: 0.5s;
+}
+.nav-item a:hover {
+	opacity: .7;
+}
+.nav-item a:before {
+	content: '';
+	position: absolute;
+	left: 15px;
+	bottom: -5px;
+	width: 0%;
+	height: 1px;
+	background-color: #e7e7e7;
+	transition: 0.5s;	
+}
+.nav-item a:hover:before {
+	width: 25%;
+}
+.header-phone {
+	text-align: center;
+}
+.header-phone a {
+	display: block;
+}
+.header-phone a:hover {
+	opacity: .7;
+}
+.phone-number {
+	color: #ffffff !important;
+	font-family: Nunito;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.call-back {
+	color: #e7e7e7 !important;
+	font-family: Nunito;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1.95px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
