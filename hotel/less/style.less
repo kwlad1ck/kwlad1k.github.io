@@ -73,7 +73,7 @@
 /* Colors */
 @head-color: #2C241B;
 @orange: #F48F17;
-@dark-orange: #CA7108;
+@dark-orange-botton: #CA7108;
 @title-text-color: #161D23;
 @text-color: #FFFFFF;
 @table-color: #404040;
@@ -157,7 +157,84 @@ a, :before, :after {
 }
 .img-phone {
 	width: 20px;
-	height: 30px;
+	height: 20px;
 	display: inline-block;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-right: 2px;
+}
+/* Конец кода nav панели */
+
+.main {
+	height: 850px;
+	background: #fff url(../img/main.jpg) center center no-repeat;
+ 	&-content {
+	margin-top: 10rem;
+	/*Главный заголовок */
+	h1 {
+		.semibold();
+		color: @orange;
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	/*Подзаголовок */
+	h2 {
+		.semibold();
+		color: @text-color ;
+		font-size: 32px;
+		font-weight: 400;
+	}
+	/*Преимущества */
+	.advantage {
+		.semibold();
+		font-size: 20px;
+		font-weight: 600;
+		color: @text-color;
+		margin-top: 10rem;
+		line-height: 2rem;
+		margin-bottom: 10px;
+		p {
+			margin-bottom: 10px;
+			/*Иконка звезды */
+			.img-star {
+				display: inline-block;
+				margin: 0px 2px;
+				padding-bottom: 7px;
+			}
+		}
+	}
+}
+&-button {
+	/*Стиль кнопок*/
+	width: 250px;
+	height: 60px;
+	display: inline-block;
+	margin-top: 5%;
+}
+}
+.take-number-btn {
+	/* Кнопка выбора номера */
+	box-shadow: 0 5px 0 #8b4c02;
+	border-radius: 5px;
+	border: 3px solid #f48f17;
+	background-color: #161d23;
+/* Текст" */
+	color: #f48f17;
+	.reg();
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-right: 65px;
+}
+/* Кнопка бронирования */
+.book-btn {
+	box-shadow: 0 5px 0 #8b4c02;
+	border-radius: 5px;
+	background-color: #f48f17;
+ /* Текст */
+	.reg();
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #f8f8f8;
 }

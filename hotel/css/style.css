@@ -130,7 +130,85 @@ a,
 }
 .img-phone {
   width: 20px;
-  height: 30px;
+  height: 20px;
   display: inline-block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+}
+/* Конец кода nav панели */
+.main {
+  height: 850px;
+  background: #ffffff url(../img/main.jpg) center center no-repeat;
+}
+.main-content {
+  margin-top: 10rem;
+  /*Главный заголовок */
+  /*Подзаголовок */
+  /*Преимущества */
+}
+.main-content h1 {
+  font-family: 'Nunito_semibold', sans-serif;
+  color: #f48f17;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main-content h2 {
+  font-family: 'Nunito_semibold', sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+}
+.main-content .advantage {
+  font-family: 'Nunito_semibold', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 10rem;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+.main-content .advantage p {
+  margin-bottom: 10px;
+  /*Иконка звезды */
+}
+.main-content .advantage p .img-star {
+  display: inline-block;
+  margin: 0px 2px;
+  padding-bottom: 7px;
+}
+.main-button {
+  /*Стиль кнопок*/
+  width: 250px;
+  height: 60px;
+  display: inline-block;
+  margin-top: 5%;
+}
+.take-number-btn {
+  /* Кнопка выбора номера */
+  -webkit-box-shadow: 0 5px 0 #8b4c02;
+          box-shadow: 0 5px 0 #8b4c02;
+  border-radius: 5px;
+  border: 3px solid #f48f17;
+  background-color: #161d23;
+  /* Текст" */
+  color: #f48f17;
+  font-family: 'Nunito_reg', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 65px;
+}
+/* Кнопка бронирования */
+.book-btn {
+  -webkit-box-shadow: 0 5px 0 #8b4c02;
+          box-shadow: 0 5px 0 #8b4c02;
+  border-radius: 5px;
+  background-color: #f48f17;
+  /* Текст */
+  font-family: 'Nunito_reg', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f8f8f8;
 }
