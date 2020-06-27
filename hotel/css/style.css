@@ -55,7 +55,7 @@ a,
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 2.5px 15px;
 }
 .nav-item a:hover {
   opacity: .7;
@@ -63,8 +63,8 @@ a,
 .nav-item a:before {
   content: '';
   position: absolute;
-  left: 5px;
-  bottom: -0.5px;
+  left: 0px;
+  bottom: 1px;
   width: 0%;
   height: 1px;
   background-color: #e7e7e7;
@@ -82,6 +82,7 @@ a,
   opacity: .7;
 }
 .phone-number {
+  display: inline-block;
   color: #ffffff !important;
   font-family: Nunito;
   font-size: 18px;
@@ -93,14 +94,22 @@ a,
   font-family: Nunito;
   line-height: 1.5px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 1.5px;
   text-decoration: underline;
   text-transform: uppercase;
+  display: inline-block;
+  padding-left: 22px;
 }
 .navbar-nav li {
   padding-right: 15px;
 }
 .navbar-brand:hover {
   opacity: .7;
+}
+.img-phone {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+  padding-bottom: 8px;
 }
