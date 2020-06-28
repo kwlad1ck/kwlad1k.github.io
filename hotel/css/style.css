@@ -46,9 +46,6 @@ html {
   font-size: 12px;
 }
 /* Typography */
-section {
-  padding: 10rem 0;
-}
 h1,
 h2,
 h3,
@@ -149,12 +146,11 @@ input:focus,
 a:focus {
   outline: none;
 }
-.main {
+.picture {
   height: 850px;
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
 }
 .main-content {
-  margin-top: 10rem;
   /*Главный заголовок */
   /*Подзаголовок */
   /*Преимущества */
@@ -165,6 +161,7 @@ a:focus {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 100px;
 }
 .main-content h2 {
   font-family: 'Nunito_semibold', sans-serif;
@@ -234,4 +231,7 @@ a:focus {
 .book-btn:hover {
   cursor: pointer;
   background-color: #e7820b;
+}
+.test {
+  position: relative;
 }
