@@ -101,13 +101,18 @@ a,
 .toolbar-phone a:hover {
   opacity: .7;
 }
+.phone {
+  display: block;
+  padding-bottom: 10px;
+}
 .phone-number {
-  display: inline-block;
+  display: block;
   color: #ffffff !important;
   font-family: 'Nunito_semibold', sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
 }
 .call-back {
   color: #e7e7e7 !important;
@@ -118,9 +123,9 @@ a,
   letter-spacing: 1.5px;
   text-decoration: underline;
   text-transform: uppercase;
-  display: inline-block;
-  padding-left: 22px;
-  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  padding-left: 20px;
 }
 .navbar-nav li {
   padding-right: 15px;
@@ -133,12 +138,20 @@ a,
   height: 20px;
   display: inline-block;
   margin-bottom: 10px;
-  margin-right: 2px;
+  padding-right: 2px;
 }
 /* Конец кода nav панели */
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
 .main {
   height: 850px;
-  background: #ffffff url(../img/main.jpg) center center no-repeat;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
 }
 .main-content {
   margin-top: 10rem;
@@ -166,7 +179,7 @@ a,
   color: #ffffff;
   margin-top: 10rem;
   line-height: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 65px;
 }
 .main-content .advantage p {
   margin-bottom: 10px;
@@ -182,7 +195,9 @@ a,
   width: 250px;
   height: 60px;
   display: inline-block;
-  margin-top: 5%;
+  margin-top: 65px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .take-number-btn {
   /* Кнопка выбора номера */
@@ -191,13 +206,17 @@ a,
   border-radius: 5px;
   border: 3px solid #f48f17;
   background-color: #161d23;
-  /* Текст" */
+  /* Текст */
   color: #f48f17;
   font-family: 'Nunito_reg', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   margin-right: 65px;
+}
+.take-number-btn:hover {
+  cursor: pointer;
+  background-color: #202a33;
 }
 /* Кнопка бронирования */
 .book-btn {
@@ -211,4 +230,8 @@ a,
   font-weight: 400;
   text-transform: uppercase;
   color: #f8f8f8;
+}
+.book-btn:hover {
+  cursor: pointer;
+  background-color: #e7820b;
 }
