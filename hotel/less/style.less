@@ -276,13 +276,19 @@ button, input, a {
 
 /* О гостинице */
 .about {
-	height: 1500px;
+	height: 1400px;
  background: #ffffff url(../img/about-bg.jpg) no-repeat center top / cover;
 
  &-info {
- 	padding: 100px;
+ 	padding: 100px 0 0 0;
  }
 }
+
+.img-slider {
+	padding-top: 65px;
+	padding-bottom: 25px;
+}
+
 /* Текст "Что представляет собой Колизей" */
 .text-about {
 	background-color: #404040;
@@ -298,32 +304,80 @@ button, input, a {
 	}
 	& .info-text {
 		.reg();
-		font-size: 18px;
+		font-size: 22px;
 		font-weight: 400;
 		color: #fff;
 		text-align: left;
 		padding: 0 10px 10px 10px;
 	}
 }
-.line {
-	display: block;
-	width: 50%;
-	height: 1px;
-	background-color: #4f4f4f;
+
+/* Оформление секции с преимуществами */
+.section-header h2 {
+	font-family: Nunito_bold;
 	text-align: center;
-	margin: 0px 25%;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #161d23;
+	margin: 50px 0;
 }
 
-.section-header {
-	& h2 {
-		padding: 50px 0;
-		font-family: Nunito_bold;
-		font-size: 28px;
-		text-transform: uppercase;
-		font-weight: 600;
-		color: #161d23;
+.features {
+	&-block {
+		text-align: center;
+		h3 {
+			.semibold();
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		p {
+			.reg();
+			display: inline-block;
+			width: 70%;
+			font-size: 18px;
+
+		}
+	}
+	&-img{ 
+		height: 80px;
+		margin-bottom: 20px;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }
+.slick-active {
+	outline: none;
+}
+.arrow-slider {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 99;
+	width: 20px;
+	height: 20px;
+	border: none;
+}
+.prev {
+	left: 0;
+	background: url(../img/arrow-left.svg) center no-repeat;
+	background-size: 80%;
+}
+.next {
+	right: 0;
+	background: url(../img/arrow-right.svg) center no-repeat;
+	background-size: 80%;
+}
+
+.slick-next {
+	right: 0;
+	background: url(../img/arrow-right.svg) center no-repeat;
+	background-size: 80%;
+}
+
+
 
 
 @media (max-width: 992px) {
@@ -334,4 +388,7 @@ button, input, a {
 	.arrow {
 		display: none;
 	}
+	.img-slider {
+		padding-top: 0;
+}
 }

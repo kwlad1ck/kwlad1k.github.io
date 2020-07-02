@@ -250,11 +250,15 @@ a:focus {
 }
 /* О гостинице */
 .about {
-  height: 1500px;
+  height: 1400px;
   background: #ffffff url(../img/about-bg.jpg) no-repeat center top / cover;
 }
 .about-info {
-  padding: 100px;
+  padding: 100px 0 0 0;
+}
+.img-slider {
+  padding-top: 65px;
+  padding-bottom: 25px;
 }
 /* Текст "Что представляет собой Колизей" */
 .text-about {
@@ -272,27 +276,71 @@ a:focus {
 }
 .text-about .info-text {
   font-family: 'Nunito_reg', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   color: #fff;
   text-align: left;
   padding: 0 10px 10px 10px;
 }
-.line {
-  display: block;
-  width: 50%;
-  height: 1px;
-  background-color: #4f4f4f;
-  text-align: center;
-  margin: 0px 25%;
-}
+/* Оформление секции с преимуществами */
 .section-header h2 {
-  padding: 50px 0;
   font-family: Nunito_bold;
+  text-align: center;
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 600;
   color: #161d23;
+  margin: 50px 0;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-family: 'Nunito_semibold', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features-block p {
+  font-family: 'Nunito_reg', sans-serif;
+  display: inline-block;
+  width: 70%;
+  font-size: 18px;
+}
+.features-img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow-slider {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/arrow-left.svg) center no-repeat;
+  background-size: 80%;
+}
+.next {
+  right: 0;
+  background: url(../img/arrow-right.svg) center no-repeat;
+  background-size: 80%;
+}
+.slick-next {
+  right: 0;
+  background: url(../img/arrow-right.svg) center no-repeat;
+  background-size: 80%;
 }
 @media (max-width: 992px) {
   .main-button {
@@ -301,5 +349,8 @@ a:focus {
   }
   .arrow {
     display: none;
+  }
+  .img-slider {
+    padding-top: 0;
   }
 }
