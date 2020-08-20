@@ -1,5 +1,5 @@
 # Кадыров Владислав
 
-[Портфолио](https://kwlad1k.github.io/mywebsite/ "profile")
+[Портфолио](https://kwlad1сk.github.io/mywebsite/ "profile")
 
-[Проект гостиницы "Колизей"](https://kwlad1k.github.io/hotel/ "Колизей")
+[Проект гостиницы "Колизей"](https://kwlad1сk.github.io/hotel/ "Колизей")
