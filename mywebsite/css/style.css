@@ -40,6 +40,11 @@ body {
   margin-bottom: 100px;
 }
 
+.name {
+  font-weight: bold;
+  font-size: 32px;
+}
+
 .social-link {
   margin-left: 20px;
 }
